@@ -13,26 +13,42 @@ struct MessageView: View {
         if (isPhotoPost){
             ZStack{
                 VStack {
-                    Image("testContent").resizable().frame(width: 350, height: 350).cornerRadius(10)
                     HStack{
-                        Text("What is going on SAFEHOUSEEE!!!! First Post on this app baby.")
-                            .font(.headline)
-                            .fontWeight(.regular)
-                        Image("testPic").resizable().frame(width: 50, height: 50)
+                        ProfilePictureView(widthSize: 50, heightSize: 50)
+                        Divider()
+                            .frame(width: 5, height: 50)
+                        VStack(alignment: .leading){
+                            Text("@andykr1k")
+                                .font(.callout)
+                                .fontWeight(.bold)
+
+                            Text("What is going on SAFEHOUSEEE!!!! First Post on this app baby.")
+                                .font(.headline)
+                                .fontWeight(.regular)
+                            }
                     }
+                    Image("testContent").resizable()
+                        .frame(width: 350, height: 350)
+                        .cornerRadius(10)
                 }
-            }.padding()
-                .background(.gray).cornerRadius(10)
+            }   .padding()
         } else {
             ZStack{
                 HStack{
-                    Text("What is going on SAFEHOUSEEE!!!! First Post on this app baby.")
-                        .font(.headline)
-                        .fontWeight(.regular)
-                    Image("testPic").resizable().frame(width: 50, height: 50)
+                    ProfilePictureView(widthSize: 50, heightSize: 50)
+                    Divider()
+                        .frame(width: 5, height: 50)
+                    VStack(alignment: .leading){
+                        Text("@andykr1k")
+                            .font(.callout)
+                            .fontWeight(.bold)
+
+                        Text("What is going on SAFEHOUSEEE!!!! First Post on this app baby.")
+                            .font(.headline)
+                            .fontWeight(.regular)
+                    }
                 }
-            }.padding()
-                .background(.gray).cornerRadius(10)
+            }   .padding()
         }
     }
 }
