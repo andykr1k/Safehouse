@@ -10,20 +10,17 @@ import SwiftUI
 struct HeaderView: View {
     var body: some View {
         ZStack {
-            Rectangle()
-                .frame(height: 100)
-            .foregroundColor(.gray.opacity(0.3))
-            HStack{
-                VStack(alignment: .leading) {
-                    Text("Today").font(.title2).bold()
-                    Text("June 16th, 2022")
-                }
-                Spacer()
-            }.padding()
-            HStack{
-                Spacer()
-                ProfilePictureView(widthSize: 50, heightSize: 50)
-            }.padding()
+            VStack {
+                HStack{
+                    VStack(alignment: .leading) {
+                        Text("Today").font(.title2).bold()
+                        Text("June 16th, 2022")
+                    }
+                    Spacer()
+                    ProfilePictureView(widthSize: 50, heightSize: 50)
+                }.padding().padding()
+                Divider()
+            }
         }
     }
 }

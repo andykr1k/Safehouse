@@ -23,7 +23,7 @@ struct HomeView: View {
                     Divider()
                     MessageView(isPhotoPost: true)
                 }
-            }.background(Color.black.opacity(0.3)).edgesIgnoringSafeArea(.all)
+            }.background(Color.black.opacity(0.1)).edgesIgnoringSafeArea(.all)
             TabView()
         }
     }

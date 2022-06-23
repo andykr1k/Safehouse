@@ -11,7 +11,8 @@ struct TabView: View {
     var body: some View {
         VStack{
             Spacer()
-            ZStack{Rectangle()
+            ZStack{
+                Capsule()
                     .frame(height: 75)
                     .foregroundColor(.gray)
                 Group{
