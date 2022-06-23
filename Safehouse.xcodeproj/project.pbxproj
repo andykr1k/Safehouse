@@ -18,6 +18,9 @@
 		4953F3A9285675A30072F17B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4953F3A8285675A30072F17B /* HomeView.swift */; };
 		4953F3AD285677330072F17B /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4953F3AC285677330072F17B /* HeaderView.swift */; };
 		4953F3AF2856785E0072F17B /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4953F3AE2856785E0072F17B /* TabView.swift */; };
+		498991AC28650A9600A47FF4 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498991AB28650A9600A47FF4 /* SearchView.swift */; };
+		498991AE28650AA300A47FF4 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498991AD28650AA300A47FF4 /* MessagesView.swift */; };
+		498991B028650AAE00A47FF4 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498991AF28650AAE00A47FF4 /* ExploreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		4953F3A8285675A30072F17B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4953F3AC285677330072F17B /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		4953F3AE2856785E0072F17B /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		498991AB28650A9600A47FF4 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		498991AD28650AA300A47FF4 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		498991AF28650AAE00A47FF4 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,10 +73,13 @@
 			children = (
 				491A5CBC2855CAAC005F16AA /* SafehouseApp.swift */,
 				491A5CBE2855CAAC005F16AA /* ContentView.swift */,
+				498991AD28650AA300A47FF4 /* MessagesView.swift */,
 				4953F3A8285675A30072F17B /* HomeView.swift */,
 				491A5CCF2855CAE3005F16AA /* MessageView.swift */,
 				4953F3AE2856785E0072F17B /* TabView.swift */,
 				4953F3AC285677330072F17B /* HeaderView.swift */,
+				498991AB28650A9600A47FF4 /* SearchView.swift */,
+				498991AF28650AAE00A47FF4 /* ExploreView.swift */,
 				4953F3A428566FA40072F17B /* ProfilePictureView.swift */,
 				491A5CC52855CAAF005F16AA /* Persistence.swift */,
 				491A5CC02855CAAF005F16AA /* Assets.xcassets */,
@@ -158,14 +167,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				498991AC28650A9600A47FF4 /* SearchView.swift in Sources */,
 				491A5CC62855CAAF005F16AA /* Persistence.swift in Sources */,
 				4953F3A9285675A30072F17B /* HomeView.swift in Sources */,
 				4953F3A528566FA40072F17B /* ProfilePictureView.swift in Sources */,
 				491A5CC92855CAAF005F16AA /* Safehouse.xcdatamodeld in Sources */,
 				491A5CBF2855CAAC005F16AA /* ContentView.swift in Sources */,
 				491A5CBD2855CAAC005F16AA /* SafehouseApp.swift in Sources */,
+				498991AE28650AA300A47FF4 /* MessagesView.swift in Sources */,
 				491A5CD02855CAE3005F16AA /* MessageView.swift in Sources */,
 				4953F3AF2856785E0072F17B /* TabView.swift in Sources */,
+				498991B028650AAE00A47FF4 /* ExploreView.swift in Sources */,
 				4953F3AD285677330072F17B /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

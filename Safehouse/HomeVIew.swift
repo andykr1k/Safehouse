@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var tab: Bool = false
+    @State private var offset = CGSize.zero
+
     static let screenWidth = UIScreen.main.bounds.size.width
     static let screenHeight = UIScreen.main.bounds.size.height
     static let screenSize = UIScreen.main.bounds.size
-    @State var Home: Bool = true;
-    @State var Search: Bool = false;
-    @State var Messages: Bool = false;
-    @State var Profile: Bool = false;
-    @State var tab: Bool = true;
     var body: some View {
         ZStack{
             VStack{
@@ -32,10 +30,11 @@ struct HomeView: View {
                     MessageView(isPhotoPost: true)
                 }
             }.background(Color.black.opacity(0.1)).edgesIgnoringSafeArea(.all)
-            if ( tab ) {
+            if ( tab ){
                 TabView()
             } else {
-                TabView().offset(y: HomeView.screenHeight - 150)
+                TabView()
+                    .offset(y: HomeView.screenHeight - 150)
             }
         }
     }

@@ -9,10 +9,6 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    @State var Home: Bool = true;
-    @State var Search: Bool = false;
-    @State var Messages: Bool = false;
-    @State var Profile: Bool = false;
     var body: some View {
         HomeView()
     }
