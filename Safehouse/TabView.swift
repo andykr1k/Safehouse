@@ -8,27 +8,38 @@
 import SwiftUI
 
 struct TabView: View {
+    
+    static let screenWidth = UIScreen.main.bounds.size.width
+    static let screenHeight = UIScreen.main.bounds.size.height
+    static let screenSize = UIScreen.main.bounds.size
+    
     var body: some View {
         VStack{
-            Spacer()
             ZStack{
-                Capsule()
-                    .frame(height: 75)
+                Rectangle()
+                    .cornerRadius(30)
                     .foregroundColor(.gray)
-                Group{
-                    HStack{
-                        Spacer()
-                        Image("house")
-                        Spacer()
-                        Image("search")
-                        Spacer()
-
-                        Image("bell")
-                        Spacer()
-                        ProfilePictureView(widthSize: 30, heightSize: 30)
-                        Spacer()
+                    .frame(height: TabView.screenHeight - 100)
+                    .offset(y: 50)
+                VStack {
+                    Group{
+                        HStack{
+                            Spacer()
+                            Image("house")
+                            Spacer()
+                            Image("circleGridSquare")
+                            Spacer()
+                            Image("search")
+                            Spacer()
+                            Image("bell")
+                            Spacer()
+                        }.padding()
                     }
-                }
+                    Divider()
+                    Spacer()
+                }.frame(height: TabView.screenHeight - 100).offset(y: 50)
+
+
             }
         }.edgesIgnoringSafeArea(.all)
     }
