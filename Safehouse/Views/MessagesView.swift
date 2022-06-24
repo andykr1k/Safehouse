@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MessagesView: View {
-    @State private var messages: Bool = false;
+    @State private var messages: Bool = true;
     @State private var notifs: Bool = false;
     var body: some View {
         VStack {

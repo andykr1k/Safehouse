@@ -11,11 +11,16 @@ struct HomeView: View {
     static let screenWidth = UIScreen.main.bounds.size.width
     static let screenHeight = UIScreen.main.bounds.size.height
     static let screenSize = UIScreen.main.bounds.size
+    @State var profileClicked: Bool = false
     var body: some View {
         ZStack{
             VStack{
                 HeaderView()
-                FeedView()
+                if (profileClicked){
+                    ProfileView()
+                } else {
+                    FeedView()
+                }
             }.background(Color.black.opacity(0.1)).edgesIgnoringSafeArea(.all)
         }
     }

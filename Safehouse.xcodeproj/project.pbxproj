@@ -28,6 +28,7 @@
 		49B899E02866676700C0FEB3 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B899DF2866676700C0FEB3 /* NotificationsView.swift */; };
 		49B899E2286667F100C0FEB3 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B899E1286667F100C0FEB3 /* NotificationView.swift */; };
 		49B899E428666B7100C0FEB3 /* DirectMessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B899E328666B7100C0FEB3 /* DirectMessagesView.swift */; };
+		49B899E628666E6F00C0FEB3 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B899E528666E6F00C0FEB3 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		49B899DF2866676700C0FEB3 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		49B899E1286667F100C0FEB3 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		49B899E328666B7100C0FEB3 /* DirectMessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessagesView.swift; sourceTree = "<group>"; };
+		49B899E528666E6F00C0FEB3 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,24 +87,11 @@
 		491A5CBB2855CAAC005F16AA /* Safehouse */ = {
 			isa = PBXGroup;
 			children = (
-				491A5CBC2855CAAC005F16AA /* SafehouseApp.swift */,
 				49B899DB2866660900C0FEB3 /* MainView.swift */,
-				49B899D6286648F400C0FEB3 /* SignUpView.swift */,
-				491A5CBE2855CAAC005F16AA /* ContentView.swift */,
-				4953F3A8285675A30072F17B /* HomeView.swift */,
-				49B899D92866656700C0FEB3 /* FeedView.swift */,
-				491A5CCF2855CAE3005F16AA /* MessageView.swift */,
-				498991AD28650AA300A47FF4 /* MessagesView.swift */,
-				49B899DD2866675900C0FEB3 /* DirectMessageView.swift */,
-				49B899E328666B7100C0FEB3 /* DirectMessagesView.swift */,
-				49B899E1286667F100C0FEB3 /* NotificationView.swift */,
-				49B899DF2866676700C0FEB3 /* NotificationsView.swift */,
-				4953F3AE2856785E0072F17B /* TabView.swift */,
-				4953F3AC285677330072F17B /* HeaderView.swift */,
-				498991AB28650A9600A47FF4 /* SearchView.swift */,
-				498991AF28650AAE00A47FF4 /* ExploreView.swift */,
-				4953F3A428566FA40072F17B /* ProfilePictureView.swift */,
+				491A5CBC2855CAAC005F16AA /* SafehouseApp.swift */,
 				491A5CC52855CAAF005F16AA /* Persistence.swift */,
+				49B899E8286671C900C0FEB3 /* Views */,
+				49B899E7286671BD00C0FEB3 /* Templates */,
 				491A5CC02855CAAF005F16AA /* Assets.xcassets */,
 				491A5CC72855CAAF005F16AA /* Safehouse.xcdatamodeld */,
 				491A5CC22855CAAF005F16AA /* Preview Content */,
@@ -116,6 +105,36 @@
 				491A5CC32855CAAF005F16AA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		49B899E7286671BD00C0FEB3 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				4953F3A428566FA40072F17B /* ProfilePictureView.swift */,
+				49B899DD2866675900C0FEB3 /* DirectMessageView.swift */,
+				491A5CCF2855CAE3005F16AA /* MessageView.swift */,
+				49B899E1286667F100C0FEB3 /* NotificationView.swift */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		49B899E8286671C900C0FEB3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				491A5CBE2855CAAC005F16AA /* ContentView.swift */,
+				49B899D6286648F400C0FEB3 /* SignUpView.swift */,
+				4953F3A8285675A30072F17B /* HomeView.swift */,
+				49B899D92866656700C0FEB3 /* FeedView.swift */,
+				498991AD28650AA300A47FF4 /* MessagesView.swift */,
+				49B899E328666B7100C0FEB3 /* DirectMessagesView.swift */,
+				49B899E528666E6F00C0FEB3 /* ProfileView.swift */,
+				49B899DF2866676700C0FEB3 /* NotificationsView.swift */,
+				4953F3AE2856785E0072F17B /* TabView.swift */,
+				4953F3AC285677330072F17B /* HeaderView.swift */,
+				498991AB28650A9600A47FF4 /* SearchView.swift */,
+				498991AF28650AAE00A47FF4 /* ExploreView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +219,7 @@
 				491A5CBD2855CAAC005F16AA /* SafehouseApp.swift in Sources */,
 				498991AE28650AA300A47FF4 /* MessagesView.swift in Sources */,
 				49B899D7286648F400C0FEB3 /* SignUpView.swift in Sources */,
+				49B899E628666E6F00C0FEB3 /* ProfileView.swift in Sources */,
 				491A5CD02855CAE3005F16AA /* MessageView.swift in Sources */,
 				4953F3AF2856785E0072F17B /* TabView.swift in Sources */,
 				498991B028650AAE00A47FF4 /* ExploreView.swift in Sources */,

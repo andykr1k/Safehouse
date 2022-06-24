@@ -24,10 +24,15 @@ struct SignUpView: View {
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .foregroundColor(Color.white)
-                    
                     Spacer()
                 }.offset(y: -100)
-
+                HStack {
+                    Text("Safehouse")
+                        .font(.title2)
+                        .foregroundColor(Color.gray)
+                        .opacity(0.3)
+                    Spacer()
+                }.offset(y: -110)
                 TextField("Email", text: $email)
                     .foregroundColor(.white)
                     .textFieldStyle(.plain)

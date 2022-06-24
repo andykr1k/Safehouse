@@ -21,6 +21,7 @@ struct TabView: View {
                 Rectangle()
                     .cornerRadius(30)
                     .foregroundColor(.gray)
+                    .opacity(0.95)
                     .frame(height: TabView.screenHeight - 100)
                     .offset(y: 50)
                     VStack {
