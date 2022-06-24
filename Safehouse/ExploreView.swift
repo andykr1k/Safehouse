@@ -11,6 +11,9 @@ struct ExploreView: View {
     var body: some View {
         VStack {
             Text("Explore")
+                .font(.title)
+                .bold()
+            Divider()
             Spacer()
         }
     }

@@ -22,6 +22,12 @@
 		498991AE28650AA300A47FF4 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498991AD28650AA300A47FF4 /* MessagesView.swift */; };
 		498991B028650AAE00A47FF4 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498991AF28650AAE00A47FF4 /* ExploreView.swift */; };
 		49B899D7286648F400C0FEB3 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B899D6286648F400C0FEB3 /* SignUpView.swift */; };
+		49B899DA2866656700C0FEB3 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B899D92866656700C0FEB3 /* FeedView.swift */; };
+		49B899DC2866660900C0FEB3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B899DB2866660900C0FEB3 /* MainView.swift */; };
+		49B899DE2866675900C0FEB3 /* DirectMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B899DD2866675900C0FEB3 /* DirectMessageView.swift */; };
+		49B899E02866676700C0FEB3 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B899DF2866676700C0FEB3 /* NotificationsView.swift */; };
+		49B899E2286667F100C0FEB3 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B899E1286667F100C0FEB3 /* NotificationView.swift */; };
+		49B899E428666B7100C0FEB3 /* DirectMessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B899E328666B7100C0FEB3 /* DirectMessagesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +47,12 @@
 		498991AD28650AA300A47FF4 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		498991AF28650AAE00A47FF4 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		49B899D6286648F400C0FEB3 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		49B899D92866656700C0FEB3 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		49B899DB2866660900C0FEB3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		49B899DD2866675900C0FEB3 /* DirectMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessageView.swift; sourceTree = "<group>"; };
+		49B899DF2866676700C0FEB3 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		49B899E1286667F100C0FEB3 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		49B899E328666B7100C0FEB3 /* DirectMessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessagesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,12 +85,18 @@
 		491A5CBB2855CAAC005F16AA /* Safehouse */ = {
 			isa = PBXGroup;
 			children = (
-				49B899D6286648F400C0FEB3 /* SignUpView.swift */,
 				491A5CBC2855CAAC005F16AA /* SafehouseApp.swift */,
+				49B899DB2866660900C0FEB3 /* MainView.swift */,
+				49B899D6286648F400C0FEB3 /* SignUpView.swift */,
 				491A5CBE2855CAAC005F16AA /* ContentView.swift */,
-				498991AD28650AA300A47FF4 /* MessagesView.swift */,
 				4953F3A8285675A30072F17B /* HomeView.swift */,
+				49B899D92866656700C0FEB3 /* FeedView.swift */,
 				491A5CCF2855CAE3005F16AA /* MessageView.swift */,
+				498991AD28650AA300A47FF4 /* MessagesView.swift */,
+				49B899DD2866675900C0FEB3 /* DirectMessageView.swift */,
+				49B899E328666B7100C0FEB3 /* DirectMessagesView.swift */,
+				49B899E1286667F100C0FEB3 /* NotificationView.swift */,
+				49B899DF2866676700C0FEB3 /* NotificationsView.swift */,
 				4953F3AE2856785E0072F17B /* TabView.swift */,
 				4953F3AC285677330072F17B /* HeaderView.swift */,
 				498991AB28650A9600A47FF4 /* SearchView.swift */,
@@ -170,6 +188,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49B899E02866676700C0FEB3 /* NotificationsView.swift in Sources */,
+				49B899E428666B7100C0FEB3 /* DirectMessagesView.swift in Sources */,
+				49B899DA2866656700C0FEB3 /* FeedView.swift in Sources */,
 				498991AC28650A9600A47FF4 /* SearchView.swift in Sources */,
 				491A5CC62855CAAF005F16AA /* Persistence.swift in Sources */,
 				4953F3A9285675A30072F17B /* HomeView.swift in Sources */,
@@ -182,7 +203,10 @@
 				491A5CD02855CAE3005F16AA /* MessageView.swift in Sources */,
 				4953F3AF2856785E0072F17B /* TabView.swift in Sources */,
 				498991B028650AAE00A47FF4 /* ExploreView.swift in Sources */,
+				49B899DE2866675900C0FEB3 /* DirectMessageView.swift in Sources */,
+				49B899DC2866660900C0FEB3 /* MainView.swift in Sources */,
 				4953F3AD285677330072F17B /* HeaderView.swift in Sources */,
+				49B899E2286667F100C0FEB3 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

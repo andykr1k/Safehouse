@@ -35,6 +35,12 @@ struct MessagesView: View {
                     }
                 }.padding()
             }
+            if (notifs){
+                NotificationsView()
+            }
+            if (messages){
+                DirectMessagesView()
+            }
             Spacer()
         }
     }

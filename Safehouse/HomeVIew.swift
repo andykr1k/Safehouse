@@ -15,17 +15,7 @@ struct HomeView: View {
         ZStack{
             VStack{
                 HeaderView()
-                ScrollView{
-                    MessageView(isPhotoPost: false)
-                    Divider()
-                    MessageView(isPhotoPost: true)
-                    Divider()
-                    MessageView(isPhotoPost: false)
-                    Divider()
-                    MessageView(isPhotoPost: false)
-                    Divider()
-                    MessageView(isPhotoPost: true)
-                }
+                FeedView()
             }.background(Color.black.opacity(0.1)).edgesIgnoringSafeArea(.all)
         }
     }

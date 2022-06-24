@@ -36,7 +36,7 @@ struct TabView: View {
                                     if ( Explore ){
                                         ZStack {
                                             Image("circleGridSquare")
-                                                .foregroundColor(.red)
+                                                .foregroundColor(.white)
                                         }
                                     } else {
                                         Image("circleGridSquare")
@@ -53,7 +53,7 @@ struct TabView: View {
                                     if ( Search ){
                                         ZStack {
                                             Image("search")
-                                                .foregroundColor(.red)
+                                                .foregroundColor(.white)
                                         }
                                     } else {
                                         Image("search")
@@ -70,7 +70,7 @@ struct TabView: View {
                                     if ( Messages ){
                                         ZStack {
                                             Image("bell")
-                                                .foregroundColor(.red)
+                                                .foregroundColor(.white)
                                         }
                                     } else {
                                         Image("bell")
