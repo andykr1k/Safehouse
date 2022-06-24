@@ -15,7 +15,6 @@ struct TabView: View {
     @State var Search: Bool = false;
     @State var Messages: Bool = false;
     @State var Explore: Bool = false;
-    @State var tab: Bool = false;
     var body: some View {
         VStack{
             ZStack{
@@ -27,24 +26,6 @@ struct TabView: View {
                     VStack {
                         Group{
                             HStack{
-                                Spacer()
-                                Button {
-                                    Home = true;
-                                    Search = false;
-                                    Messages = false;
-                                    Explore = false;
-                                    tab = false;
-                                } label: {
-                                    if ( Home ){
-                                        ZStack {
-                                            Image("house")
-                                                .foregroundColor(.red)
-                                        }
-                                    } else {
-                                        Image("house")
-                                            .foregroundColor(.black)
-                                    }
-                                }
                                 Spacer()
                                 Button {
                                     Home = false;
@@ -110,7 +91,7 @@ struct TabView: View {
                             ExploreView()
                         }
                         if (Home){
-                            Spacer();
+                            Spacer()
                         }
                     }.frame(height: TabView.screenHeight - 100).offset(y: 50)
             }
@@ -123,3 +104,4 @@ struct TabView_Previews: PreviewProvider {
         TabView()
     }
 }
+

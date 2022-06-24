@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State var tab: Bool = false
+    @State private var Home: Bool = false
     @State private var offset = CGSize.zero
 
     static let screenWidth = UIScreen.main.bounds.size.width
@@ -30,11 +30,11 @@ struct HomeView: View {
                     MessageView(isPhotoPost: true)
                 }
             }.background(Color.black.opacity(0.1)).edgesIgnoringSafeArea(.all)
-            if ( tab ){
-                TabView()
-            } else {
+            if ( Home ){
                 TabView()
                     .offset(y: HomeView.screenHeight - 150)
+            } else {
+                TabView()
             }
         }
     }
