@@ -20,7 +20,7 @@ struct HomeView: View {
                     HStack {
                         Spacer()
                         Button {
-                            profileClicked = true
+                            profileClicked.toggle()
                         } label: {
                             ProfilePictureView(widthSize: 50, heightSize: 50)
                         }
