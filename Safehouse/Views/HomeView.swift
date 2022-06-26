@@ -15,9 +15,34 @@ struct HomeView: View {
     var body: some View {
         ZStack{
             VStack{
-                HeaderView()
+                ZStack {
+                    HeaderView()
+                    HStack {
+                        Spacer()
+                        Button {
+                            profileClicked = true
+                        } label: {
+                            ProfilePictureView(widthSize: 50, heightSize: 50)
+                        }
+                    }.padding().padding()
+                }
+
                 if (profileClicked){
-                    ProfileView()
+                    ZStack {
+                        ProfileView()
+                        VStack {
+                            HStack {
+                                Spacer()
+                                Button {
+                                    profileClicked = false
+                                } label: {
+                                    Image("xmark")
+                                        .foregroundColor(.black)
+                                }
+                            }.padding().padding()
+                            Spacer()
+                        }
+                    }
                 } else {
                     FeedView()
                 }

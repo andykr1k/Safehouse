@@ -17,7 +17,6 @@ struct HeaderView: View {
                         Text("June 16th, 2022")
                     }
                     Spacer()
-                    ProfilePictureView(widthSize: 50, heightSize: 50)
                 }.padding().padding()
                 Divider()
             }
