@@ -20,7 +20,7 @@ struct TabView: View {
             ZStack{
                 Rectangle()
                     .cornerRadius(30)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.init(red: 0.1, green: 0.1, blue: 0.1))
                     .opacity(0.95)
                     .frame(height: TabView.screenHeight - 100)
                     .offset(y: 50)
@@ -37,11 +37,11 @@ struct TabView: View {
                                     if ( Explore ){
                                         ZStack {
                                             Image("circleGridSquare")
-                                                .foregroundColor(.white)
+                                                .foregroundColor(.red)
                                         }
                                     } else {
                                         Image("circleGridSquare")
-                                            .foregroundColor(.black)
+                                            .foregroundColor(.white)
                                     }
                                 }
                                 Spacer()
@@ -54,11 +54,11 @@ struct TabView: View {
                                     if ( Search ){
                                         ZStack {
                                             Image("search")
-                                                .foregroundColor(.white)
+                                                .foregroundColor(.red)
                                         }
                                     } else {
                                         Image("search")
-                                            .foregroundColor(.black)
+                                            .foregroundColor(.white)
                                     }
                                 }
                                 Spacer()
@@ -71,11 +71,11 @@ struct TabView: View {
                                     if ( Messages ){
                                         ZStack {
                                             Image("bell")
-                                                .foregroundColor(.white)
+                                                .foregroundColor(.red)
                                         }
                                     } else {
                                         Image("bell")
-                                            .foregroundColor(.black)
+                                            .foregroundColor(.white)
                                     }
                                 }
                                 Spacer()

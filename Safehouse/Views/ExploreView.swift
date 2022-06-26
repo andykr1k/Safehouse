@@ -13,6 +13,7 @@ struct ExploreView: View {
             Text("Explore")
                 .font(.title)
                 .bold()
+                .foregroundColor(.white)
             Divider()
             Spacer()
         }

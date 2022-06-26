@@ -11,7 +11,7 @@ struct NotificationView: View {
     var body: some View {
         ZStack {
             Capsule()
-                .foregroundColor(.gray)
+                .foregroundColor(.white)
             HStack{
                 ProfilePictureView(widthSize: 30, heightSize: 30)
                 Spacer()

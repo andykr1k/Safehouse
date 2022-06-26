@@ -16,22 +16,22 @@ struct MessagesView: View {
                 HStack{
                     if (messages){
                         Text("Messages")
-                            .bold()
+                            .bold().foregroundColor(.white)
                     } else {
                         Button("Messages"){
                             messages = true
                             notifs = false
-                        }.foregroundColor(.black)
+                        }.foregroundColor(.white)
                     }
                     Divider().frame(height: 10)
                     if (notifs){
                         Text("Notifications")
-                            .bold()
+                            .bold().foregroundColor(.white)
                     } else {
                         Button("Notifications"){
                             notifs = true
                             messages = false
-                        }.foregroundColor(.black)
+                        }.foregroundColor(.white)
                     }
                 }.padding()
             }
