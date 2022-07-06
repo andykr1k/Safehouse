@@ -16,7 +16,7 @@ struct SignUpView: View {
                 .foregroundColor(.gray)
                 .opacity(0.2)
                 .rotationEffect(.degrees(45))
-                .offset(x: -40, y: -350)
+                .offset(x: -90, y: -350)
             
             VStack(spacing: 20){
                 HStack {
